@@ -1,0 +1,222 @@
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+<script type="text/javascript">
+function validation()
+{
+var w = document.form.name.value;
+var a = document.form.address.value;
+var d = document.form.date.value;
+var e = document.form.email.value;
+var n = document.form.phone.value;
+if(w=="")
+{
+alert("Please Enter Your Name");
+document.form.name.focus();
+return false;
+}
+if(w>=0||w<0)
+{
+alert("Invalid input for Name");
+document.form.name.focus();
+return false;
+}
+if(a=="")
+{
+alert("Please Enter Your Address");
+document.form.address.focus();
+return false;
+}
+if(d=="")
+{
+alert("Please Enter Your Date of Birth");
+document.form.date.focus();
+return false;
+}
+if(e=="")
+{
+alert("Please Enter Your E-Mail");
+document.form.email.focus();
+return false;
+}
+if(n=="")
+{
+alert("Please Enter Your Phone Number");
+document.form.phone.focus();
+return false;
+}
+if(n<='z' && n>='a' || n<='Z' && n>= 'A')
+{
+alert("Invalid input for Phone Number");
+document.form.phone.focus();
+return false;
+}
+}       
+</script>
+</head>
+
+<body bgcolor = "lightgray">
+
+                <div class="main">
+                        <ul>
+
+                                <li class="menuitem"><a
+href="file:///home/ubuntu/Desktop/website/index.html">Home</a></li>
+                                <li class="menuitem" ><a href="#">Past Women Leaders</a>
+                                        <ul class="submenu">
+                                              <li class="submenuitem"><a
+href="file:///home/ubuntu/Desktop/website/pastacademic.html">Academics</a></li>
+                                              <li class="submenuitem"><a
+href="file:///home/ubuntu/Desktop/website/pastsports.html">Sports</a></li>
+                                              <li class="submenuitem"><a
+href="file:///home/ubuntu/Desktop/website/pastpolitician.html">Politics</a></li>
+                                              <li class="submenuitem"><a
+href="file:///home/ubuntu/Desktop/website/pastentertainment.html">Entertainment</a></li>
+                                              <li class="submenuitem"><a
+href="file:///home/ubuntu/Desktop/website/philanpast.html">Philanthropy</a></li>
+                                        </ul>
+                                </li>
+                                <li class="menuitem"><a href="#">Present Women Leaders</a>
+                                        <ul class="submenu">
+                                              <li class="submenuitem"><a
+href="file:///home/ubuntu/Desktop/website/presentacademic.html">Academics</a></li>
+                                              <li class="submenuitem"><a
+href="file:///home/ubuntu/Desktop/website/presentsports.html">Sports</a></li>
+                                              <li class="submenuitem"><a
+href="file:///home/ubuntu/Desktop/website/presentpoliticians.html">Politics</a></li>
+                                              <li class="submenuitem"><a
+href="file:///home/ubuntu/Desktop/website/presententertainment.html">Entertainment</a></li>
+                                              <li class="submenuitem"><a
+href="file:///home/ubuntu/Desktop/website/philanpresent.html">Philanthropy</a></li>
+                                        </ul>
+                                </li>
+                                <li class="menuitem"><a
+href="file:///home/ubuntu/Desktop/website/about.html">About</a></li>
+                                <li class="active"><a
+href="file:///home/ubuntu/Desktop/website/index22.html">Contact</a></li>
+                        </ul>
+</header>
+</div>
+
+<script src = "contact.js"></script>
+
+<body>
+<form name="form" method="post" onsubmit="return validation()">
+
+<center> <font color = "black"> <h2> Contact </h2> </font> </center>
+ <p style="text-align:right"><i>All fields with * are mandatory to be
+filled.</i></p>
+
+<table align = "center"
+       height = "600" >
+<tr>
+<td> Name*:</td>
+<td><input type="text" name="name""></td>
+</tr>
+<tr>
+<td> Address*:</td>
+<td><textarea name="address" cols="30" rows="4"></textarea></td>
+</tr>
+<tr>
+<td> Date of Birth*:</td>
+<td><input type="date" name="date""></td>
+</tr>
+<tr>
+<td> <font color = "black"> How did you come to know about us? </font> </td>
+<td>
+<select>
+  <option value="Select">Select</option>
+  <option value="Newspaper Advertisement">Newspaper Advertisement</option>
+  <option value="Internet">Internet</option>
+  <option value="Billboards">Billboards</option>
+  <option value="Word of Mouth">Word of Mouth</option>
+  <option value="Others">Others</option>
+
+</select>
+</td>
+</tr>
+<tr>
+<td> <font color = "black">How did you gain interest in this
+subject?</font> </td>
+<td>
+<input type = "checkbox" id = "history" value = "history"/><label for
+= "I am interseted in the history of our women leaders"> <font color =
+"black"> I am interseted in the history of our women leaders </font>
+</label>
+</td>
+</tr>
+<tr>
+<td> </td>
+<td>
+<input type = "checkbox" id = "passionate" value =
+"passionate"/><label for = "I am passionate to spread awareness about
+women leaders"> <font color = "black"> I am passionate to spread
+awareness about women leaders </font> </label>
+</td>
+</tr>
+<tr>
+<td> </td>
+<td>
+<input type = "checkbox" id = "I/M" value = "I/M"/><label for = "I am
+inspired to work harder by looking up to them"> <font color = "black">
+I am inspired to work harder by looking up to them </font> </label>
+</td>
+</tr>
+<tr>
+<td> </td>
+<td>
+<input type = "checkbox" id = "become" value = "become"/><label for =
+"I look forward to be a part of this elite group of people"> <font
+color = "black"> I look forward to be a part of this elite group of
+people </font> </label>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>  <font color = "black"> Gender </font>  </td>
+<td>
+<input type = "radio" id = "1" value="1"
+       name="chooseone">
+<font color = "black"> Male </font>
+<input type = "radio" id="1" value="2"
+       name="chooseone">
+<font color = "black"> Female </font>
+<input type = "radio" id="1" value="3"
+       name="chooseone">
+<font color = "black"> Transgender </font>
+</td>
+
+</tr>
+<tr>
+<td> Email*:</td>
+<td><input type="text" name="email"></td>
+</tr>
+<tr>
+<td> Phone*:</td>
+<td><input type="text" maxlength = "10" name="phone""></td>
+</tr>
+
+<tr>
+<td>  <font color = "black"> Comments </font>  </td>
+<td>
+<textarea rows = "5" cols = "50" required> </textarea>
+</td>
+</tr>
+<tr>
+<td> </td>
+<td>
+<input type = "Reset"
+       color = "black" />
+</td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" name="sub" value="Submit"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+
